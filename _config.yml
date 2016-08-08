@@ -14,12 +14,12 @@ keywords: "solar energy, sustainable power, energy supplier, Melbourne Victoria 
 
 # Collections
 collections:
-	content-home:
-		title: content-home
-		output: false
-	uploads:
-		title: Uploads
-		output: true
+    content-home:
+        title: content-home
+        output: false
+    uploads:
+        title: Uploads
+        output: true
 
 # Build settings
 markdown: kramdown
