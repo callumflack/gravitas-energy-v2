@@ -27,3 +27,6 @@ exclude:
 - package.json
 - gulp.js
 - gulpfile.js
+
+site-title: "Gravitas Energy"
+site-description: "Gravitas Energy partners with your business to cut energy costs and convert you to sustainable power, all without interrupting the day-to-day running of your business, and saving you money. The Gravitas Energy home office is in Port Melbourne, Victoria, Australia."
