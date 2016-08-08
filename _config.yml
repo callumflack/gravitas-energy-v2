@@ -4,6 +4,7 @@
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
+
 ---
 # Site settings
 title: Gravitas Energy
@@ -11,11 +12,12 @@ url:  http://www.gravitasenergy.com.au
 feed-url: /feed.xml
 description: "Gravitas Energy partners with your business to cut energy costs and convert you to sustainable power, all without interrupting the day-to-day running of your business, and saving you money. The Gravitas Energy home office is in Port Melbourne, Victoria, Australia."
 keywords: "solar energy, sustainable power, energy supplier, Melbourne Victoria Australia"
+email: "info@gravitasenergy.com.au"
 
 # Collections
 collections:
-    content-home:
-        title: content-home
+    copy:
+        title: copy
         output: false
     uploads:
         title: Uploads
@@ -24,9 +26,15 @@ collections:
 # Build settings
 markdown: kramdown
 
+# Excludes
 exclude:
+- Gemfile
+- Gemfile.lock
+- config.ru
 - node_modules
 - README.markdown
+- README.md
 - package.json
 - gulp.js
 - gulpfile.js
+- editorconfig

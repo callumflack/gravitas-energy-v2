@@ -2,34 +2,35 @@
 layout: default
 ---
 
-{% assign home = site.copy | where: 'title', 'home' | first  %}
+{% assign cases = site.pages | where: 'title', 'case-studies' | first  %}
 
 <div class="Container">
 	<section class="Section" id="what">
 
 		<div class="Section-item u-xs-before1of12 u-xs-size7of12">
-			<h2 class=""><span>What we do</span></h2>
-			<p class="Section-intro">{{ home.what }} <span>How?</span></p>
+			<h2 class=""><span>Case studies</span></h2>
+			<!-- <p class="Section-intro">{{ home.what }} <span>How?</span></p> -->
 		</div>
 
-		<div class="Section-item Section-item--advice u-xs-before5of12 u-xs-size7of12 u-before3of12 u-size9of12">
-			<h3 class="">Expert advice</h3>
-			<p class="">{{ home.what-expert }}</p>
+		<div class="Section-item Section-item--case1 u-before3of12 u-xs-size7of12 u-size9of12">
+			<h3 class="">{{ cases.case-one }}</h3>
+			{{ cases.case-one-text | markdownify }}
+			<img src="/uploads/case-manufacturing1-graph.jpg" alt="" />
 		</div>
 
-		<div class="Section-item Section-item--sustainable u-before3of12 u-xs-size7of12 u-size9of12">
-			<h3 class="">Switch to sustainable power</h3>
-			<p class="">{{ home.what-switch }}</p>
+		<!-- <div class="Section-item Section-item--sustainable u-before3of12 u-xs-size7of12 u-size9of12">
+			<h3 class="">{{ cases.case-two }}</h3>
+			<p class="">{{ cases.case-two-text }}</p>
 		</div>
 
-		<div class="Section-item Section-item--saving u-xs-before5of12 u-xs-size7of12 u-before3of12 u-size9of12">
-			<h3 class="">Start saving</h3>
-			<p class="">{{ home.what-saving }}</p>
-		</div>
+		<div class="Section-item Section-item--saving u-before3of12 u-xs-size7of12 u-size9of12">
+			<h3 class="">{{ cases.case-three }}</h3>
+			<p class="">{{ cases.case-three-text }}</p>
+		</div> -->
 
 	</section>
 
-	<section class="Section" id="who">
+	<!-- <section class="Section" id="who">
 		<div class="Section-item u-xs-size7of12 u-size9of12 Grid-cell--center">
 			<h3 class="">Who can use our services</h3>
 			<p class="">{{ home.who }}</p>
@@ -47,6 +48,6 @@ layout: default
 			<p class="u-textSm"><em>We're accredited with these organisations:</em></p>
 			<img class="" style="@media(min-width:767px){height:88px}" src="/uploads/accreditation-logos.jpg" alt="Gravitas Energy accreditations">
 		</div>
-	</section>
+	</section> -->
 
 </div>
