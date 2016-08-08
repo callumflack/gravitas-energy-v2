@@ -8,18 +8,18 @@
 # Site settings
 title: Gravitas Energy
 url:  http://www.gravitasenergy.com.au
-feed-url: http://www.gravitasenergy.com.au/feed.xml
+feed-url: /feed.xml
 description: "Gravitas Energy partners with your business to cut energy costs and convert you to sustainable power, all without interrupting the day-to-day running of your business, and saving you money. The Gravitas Energy home office is in Port Melbourne, Victoria, Australia."
 keywords: "solar energy, sustainable power, energy supplier, Melbourne Victoria Australia"
 
 # Collections
 collections:
 	content-home:
-	  title: content-home
-	  output: false
+		title: content-home
+		output: false
 	uploads:
-	  title: Uploads
-	  output: true
+		title: Uploads
+		output: true
 
 # Build settings
 markdown: kramdown
