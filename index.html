@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+{% assign home = site.content-home | where: 'title', 'home' | first  %}
+
+<div class="Container">
+	<section class="Section" id="what">
+
+		<div class="Section-item u-xs-before1of12 u-xs-size7of12">
+			<h2 class=""><span>What we do</span></h2>
+			<p class="Section-intro">{{ home.what }} <span>How?</span></p>
+		</div>
+
+		<div class="Section-item Section-item--advice u-xs-before5of12 u-xs-size7of12 u-before3of12 u-size9of12">
+			<h3 class="">Expert advice</h3>
+			<p class="">{{ home.what-expert }}</p>
+		</div>
+
+		<div class="Section-item Section-item--sustainable u-before3of12 u-xs-size7of12 u-size9of12">
+			<h3 class="">Switch to sustainable power</h3>
+			<p class="">{{ home.what-switch }}</p>
+		</div>
+
+		<div class="Section-item Section-item--saving u-xs-before5of12 u-xs-size7of12 u-before3of12 u-size9of12">
+			<h3 class="">Start saving</h3>
+			<p class="">{{ home.what-saving }}</p>
+		</div>
+
+	</section>
+
+	<section class="Section" id="who">
+		<div class="Section-item u-xs-size7of12 u-size9of12 Grid-cell--center">
+			<h3 class="">Who can use our services</h3>
+			<p class="">{{ home.who }}</p>
+		</div>
+		<p class="Who-directive">
+			<a class="Button" href="#contact">Get Started<i class="Arrow-right"></i></a>
+		</p>
+	</section>
+
+	<section class="Section" id="about">
+		<div class="Section-item u-xs-before1of12 u-xs-size9of12">
+			<h2 class=""><span>About Us</span></h2>
+			<h3 class="">We'll get your business going green and saving bills, no upfront costs.</h3>
+			<p class="">{{ home.about }}</p>
+			<p class="u-textSm"><em>We're accredited with these organisations:</em></p>
+			<img class="" style="@media(min-width:767px){height:88px}" src="/uploads/accreditation-logos.jpg" alt="Gravitas Energy accreditations">
+		</div>
+	</section>
+
+</div>
