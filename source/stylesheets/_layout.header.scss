@@ -8,12 +8,36 @@
 .Header {
     background-color: $color-bg-neutral;
     max-height: rem(580);
-    @include respond-to(sm) { height: rem(700); }
+    position: relative;
+
+    @include respond-to(sm) {
+        height: rem(700);
+    }
+
+    @include respond-to(xl) {
+        background-position-y: 30% !important;
+    }
+}
+
+.Header--half {
+    max-height: rem(290);
+
+    @include respond-to(sm) {
+        height: rem(350);
+    }
+
+    @include respond-to(xl) {
+        background-position-y: 30% !important;
+    }
 }
 
 .Header-nav {
-    margin: $space 0;
-    position: relative;
+    //margin: $space 0;
+    //position: relative;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: $space;
 }
 
 .Header-logo {
@@ -30,10 +54,11 @@
 }
 
 .Header-menu {
+    margin: 0;
     position: absolute;
     top: rem(13);
     right: 0;
-    margin: 0;
+    width: auto;
 
     li {
         @include TextSm();
@@ -43,14 +68,14 @@
     }
 
     li:not(:last-child) {
-        margin-right: $space * 0.3;
+        margin-right: $space * 0.5;
     }
 
-    li:last-child:before {
-        content: "•";
-        display: inline-block;
-        margin-right: $space * 0.3;
-    }
+    //li:last-child:before {
+    //    content: "•";
+    //    display: inline-block;
+    //    margin-right: $space * 0.3;
+    //}
 
     li a {
         @include u-link(none);
@@ -60,7 +85,7 @@
 }
 
 .Header-directive {
-    margin-top: $space * 2;
+    //margin-top: $space * 2;
 
     p {
         @include remFallback($base-font-size-unit + 1);

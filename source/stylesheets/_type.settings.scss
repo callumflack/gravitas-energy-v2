@@ -47,7 +47,12 @@ pre,
 
 ul {
     // list-style-type: disc;
-    list-style-type: none;
+    list-style-type: square;
+    margin-left: $space * 0.666666667;
+
+    @include respond-to(sm) {
+        width: 85%;
+    }
 }
 
 ol {
@@ -64,4 +69,16 @@ b,
 .u-textBold {
     @include TypeReset();
     font-family: $font-text-bold;
+}
+
+
+// Basic markdown styling
+// --------------------------------------------------------------------------
+
+p + ul {
+    //margin-top: -$space--D2;
+}
+
+li {
+    margin-bottom: 0;
 }

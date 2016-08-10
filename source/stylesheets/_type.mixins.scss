@@ -60,17 +60,28 @@
     @include remFallback($sizeHeaderLg);
     border-bottom: 1px solid currentColor;
     color: $color-white;
+    display: inline-block;
     font-family: $sans-light;
     letter-spacing: 0.03em;
     line-height: 1;
     margin-bottom: $space * 0.75;
     padding-bottom: $space * 0.25;
-    text-transform: lowercase;
+    //text-transform: lowercase;
 
     @include respond-to(sm) {
 
     }
 }
+
+//.Header h1 {
+//    display: inline-block;
+//
+//    @include when-inside(".home") {
+//        display: block;
+//    }
+//}
+
+
 
 
 // Section headline / lede
@@ -101,10 +112,9 @@
     @include remFallback($sizeHeaderSm);
     color: $color-text;
     font-family: $sans-bold;
-    line-height: calc(#{$r-sizeHeaderSm} * #{$base-line-height-unit});
+    //line-height: calc(#{$r-sizeHeaderSm} * #{$base-line-height-unit});
+    line-height: 1.25;
     letter-spacing: 0.03em;
-    margin-bottom: $space * 0.25;
-    margin-bottom: 0;
 }
 
 

@@ -3638,13 +3638,13 @@ body {
         width: 10.4375rem; } }
 
 .Section-item--advice:before {
-  background-image: url(/uploads/icon_advice.png); }
+  background-image: url(/build/images/icon_advice.png); }
 
 .Section-item--saving:before {
-  background-image: url(/uploads/icon_saving.png); }
+  background-image: url(/build/images/icon_saving.png); }
 
 .Section-item--sustainable:before {
-  background-image: url(/uploads/icon_sustainable.png); }
+  background-image: url(/build/images/icon_sustainable.png); }
 
 .Section-intro {
   font-family: "LyonText-Bold", Georgia, Times, serif; }

@@ -1,0 +1,25 @@
+
+
+// --------------------------------------------------------------------------
+//   VERTICAL ALIGNER
+//   Ripped from: instrument.com
+// --------------------------------------------------------------------------
+
+
+.ghost {
+    font-size: 0;
+    height: inherit;
+}
+
+.ghost:before {
+    content: "";
+    height: 100%;
+    margin-left: -1px;
+    width: 1px;
+}
+
+.ghost:before,
+.ghost__child {
+    display: inline-block;
+    vertical-align: middle;
+}

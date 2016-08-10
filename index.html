@@ -1,30 +1,36 @@
 ---
 layout: default
+title: home
+what: "We partner with your business to cut energy costs and convert you to sustainable power. We do this all without interrupting the day-to-day running of your business, and improving your overall bottom line."
+what-expert: "We examine your bills, your energy consumption, your building and your equipment; and find ways to cut your power usage and bills. You receive a report with our recommendations and what this will mean for your business."
+what-switch: "Our experts find you the best renewable generation for you — be it solar, wind or otherwise. We explain your options and then we deliver the lot for you. You’re business gets permits and the best products, all installed by accredited installers, and a new deal from your electricity and gas companies with the best rates available for you. No capital outlay."
+what-saving: "Your energy costs drop. You show off your new green, energy generation. Your energy rates are lower when you source any power from the grid. Your business saves money — more than enough to pay for your new energy system, all through monthly instalments. Nothing upfront. Positive impact on cashflow from day one."
+who: "Organisations of all kinds, and all sizes, can work with our energy experts to improve their bottom line. This spans hospitality, retail, farming, manufacturing, small-industrial, professional services, schools, government and community energy projects.  From SMEs, to large commercial, to industrial, to base-load energy supply — Gravitas Energy has got you covered."
+about-headline: "We'll get your business going green and saving bills, no upfront costs."
+about: "A wholly Australian-owned company, our experts are specialists in energy, finance, investment and business. We support organisations large and small to deliver the best value for money solar, wind and co-generation options for them."
 ---
-
-{% assign home = site.copy | where: 'title', 'home' | first  %}
 
 <div class="Container">
 	<section class="Section" id="what">
 
 		<div class="Section-item u-xs-before1of12 u-xs-size7of12">
 			<h2 class=""><span>What we do</span></h2>
-			<p class="Section-intro">{{ home.what }} <span>How?</span></p>
+			<p class="Section-intro">{{ page.what }} <span>How?</span></p>
 		</div>
 
 		<div class="Section-item Section-item--advice u-xs-before5of12 u-xs-size7of12 u-before3of12 u-size9of12">
 			<h3 class="">Expert advice</h3>
-			<p class="">{{ home.what-expert }}</p>
+			<p class="">{{ page.what-expert }}</p>
 		</div>
 
 		<div class="Section-item Section-item--sustainable u-before3of12 u-xs-size7of12 u-size9of12">
 			<h3 class="">Switch to sustainable power</h3>
-			<p class="">{{ home.what-switch }}</p>
+			<p class="">{{ page.what-switch }}</p>
 		</div>
 
 		<div class="Section-item Section-item--saving u-xs-before5of12 u-xs-size7of12 u-before3of12 u-size9of12">
 			<h3 class="">Start saving</h3>
-			<p class="">{{ home.what-saving }}</p>
+			<p class="">{{ page.what-saving }}</p>
 		</div>
 
 	</section>
@@ -32,7 +38,7 @@ layout: default
 	<section class="Section" id="who">
 		<div class="Section-item u-xs-size7of12 u-size9of12 Grid-cell--center">
 			<h3 class="">Who can use our services</h3>
-			<p class="">{{ home.who }}</p>
+			<p class="">{{ page.who }}</p>
 		</div>
 		<p class="Who-directive">
 			<a class="Button" href="#contact">Get Started<i class="Arrow-right"></i></a>
@@ -43,9 +49,9 @@ layout: default
 		<div class="Section-item u-xs-before1of12 u-xs-size9of12">
 			<h2 class=""><span>About Us</span></h2>
 			<h3 class="">We'll get your business going green and saving bills, no upfront costs.</h3>
-			<p class="">{{ home.about }}</p>
+			<p class="">{{ page.about }}</p>
 			<p class="u-textSm"><em>We're accredited with these organisations:</em></p>
-			<img class="" style="@media(min-width:767px){height:88px}" src="/uploads/accreditation-logos.jpg" alt="Gravitas Energy accreditations">
+			<img class="" style="@media(min-width:767px){height:88px}" src="/build/images/accreditation-logos.jpg" alt="Gravitas Energy accreditations">
 		</div>
 	</section>
 

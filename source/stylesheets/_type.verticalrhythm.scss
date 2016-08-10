@@ -21,7 +21,8 @@ blockquote, p, address,
 table, time,
 fieldset,
 pre {
-    margin-bottom: $space--D2;
+    //margin-bottom: $space--D2;
+    margin-bottom: $space * 0.75;
 }
 
 .u-halfVertRhythm,

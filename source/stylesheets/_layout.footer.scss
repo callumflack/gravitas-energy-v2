@@ -30,6 +30,18 @@
     }
 }
 
+.Footer-partners {
+    p {
+        color: $color-grey;
+        margin: $space--D2 0 0;
+    }
+
+    img {
+        height: rem(30);
+        @include respond-to(sm) { height: rem(34); }
+    }
+}
+
 .Footer-meta {
     margin-top: rem(16);
 
@@ -51,4 +63,6 @@
 }
 
 .Footer-menu {
+    list-style-type: none;
+    width: auto;
 }

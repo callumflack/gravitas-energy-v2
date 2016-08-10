@@ -32,7 +32,7 @@ $color-fold            : rgba($color-brand,0.15);
  * Type sizes
  */
 
-$base-font-size-unit   : 21;
+$base-font-size-unit   : 20;
 $base-font-size        : $base-font-size-unit * 1px;
 $base-line-height-unit : 1.5;
 $base-line-height      : ($base-font-size-unit * $base-line-height-unit) * 1px; //28.5
@@ -148,7 +148,8 @@ $breakpoints: (
     'sm'     : ( min-width:  767px ),
     'sm-max' : ( max-width:  768px ),
     'md'     : ( min-width:  992px ),
-    'lg'     : ( min-width: 1200px )
+    'lg'     : ( min-width: 1200px ),
+    'xl'     : ( min-width: 1700px )
 );
 
 

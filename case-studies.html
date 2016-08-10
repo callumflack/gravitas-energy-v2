@@ -1,0 +1,58 @@
+---
+layout: default
+title: case-studies
+navigation_order: 2
+headline: reducing consumption, increasing savings
+case-one: A Manufacturing Company in Melbourne, late 2015
+case-one-text: |
+    Gravitas Energy installed a 30kW solar installation at our premises. Being a Contestable Customer we have high network demand charges. Often they are higher than energy charges. By installing a 30kW system, VSDs and changing our lighting to LED we where able to reduce our energy consumption. We installed additional equipment increased our production and still being able to demonstrate reduction in our usage. We are currently investigating opportunities to increase our system by additional 60kW.
+case-two: A Medical Centre in Melbourne, November 2015
+case-two-text: |
+    Gravitas Energy installed a 20kW AC system at our premises. Our Energy consumption has been greatly reduced. Installation team was professional with minimum interruption to our normal operations.
+case-three: A Manufacturing Company in Melbourne, late 2015
+case-three-text: |
+    Gravitas Energy installed a 30kW solar installation at our premises, due to limitations of available power for our needs. We could not take on additional contracts as we reached top limit of available power to our factory. By installing this system we managed to half our energy consumption thus allowing us to grow our business. Our billable consumption dropped from 8,736kWhs last year to 4,329kWhs for same period this year. We could not be happier with the outcomes.
+---
+
+{% assign cases = site.pages | where: 'title', 'case-studies' | first  %}
+
+<div class="Container">
+	<section class="Section" id="what">
+
+		<div class="Section-item u-xs-before1of12 u-xs-size7of12">
+			<h2 class=""><span>Case studies</span></h2>
+			<!-- <p class="Section-intro">{{ home.what }} <span>How?</span></p> -->
+		</div>
+
+		<div class="Grid Grid--withGutter">
+			<div class="Grid-cell u-before1of12 u-xs-size8of12 u-size10of12">
+				<h3 class="">{{ page.case-one }}</h3>
+				{{ page.case-one-text | markdownify }}
+				<figure class="Figure">
+					<img class="" src="/build/images/case-manufacturing1.jpg" alt="" />
+				</figure>
+				<!-- <figure class="ImageDuo">
+					<img src="/build/images/case-manufacturing1.jpg" alt="" />
+					<img src="/build/images/case-manufacturing1-graph.jpg" alt="" />
+				</figure> -->
+			</div>
+
+			<div class="Grid-cell u-before3of12 u-xs-size8of12 u-size10of12 u-marginTX3">
+				<h3 class="">{{ page.case-two }}</h3>
+				{{ page.case-two-text | markdownify }}
+				<figure class="Figure">
+					<img src="/build/images/case-medical.jpg" alt="" />
+				</figure>
+			</div>
+
+			<div class="Grid-cell u-before1of12 u-xs-size8of12 u-size10of12 u-marginTX3">
+				<h3 class="">{{ page.case-three }}</h3>
+				{{ page.case-three-text | markdownify }}
+				<figure class="Figure">
+					<img src="/build/images/case-manufacturing2.jpg" alt="" />
+				</figure>
+			</div>
+		</div>
+
+	</section>
+</div>

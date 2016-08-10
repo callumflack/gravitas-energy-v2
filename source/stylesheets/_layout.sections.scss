@@ -59,30 +59,13 @@
     }
 }
 
-.Section-item--advice:before      { background-image: url(/uploads/icon_advice.png); }
-.Section-item--saving:before      { background-image: url(/uploads/icon_saving.png); }
-.Section-item--sustainable:before { background-image: url(/uploads/icon_sustainable.png); }
-
-
-//New shit
-.Section-item--case1:before {
-    background-image: url(/uploads/case-manufacturing1.jpg);
-    top: 6px;
-}
-
-
-
-
-
-
-
-
-
+.Section-item--advice:before      { background-image: url(/build/images/icon_advice.png); }
+.Section-item--saving:before      { background-image: url(/build/images/icon_saving.png); }
+.Section-item--sustainable:before { background-image: url(/build/images/icon_sustainable.png); }
 
 
 .Section-intro {
     font-family: $font-text-bold;
-
     span { font-family: $font-text-bold-i; }
 }
 
@@ -109,4 +92,22 @@
             top: calc(50% - #{(rem(1) * 0.5)});
         }
     }
+}
+
+
+// New shit for case studies
+// --------------------------------------------------------------------------
+
+.ImageDuo {
+    font-size: 0;
+    margin: $space 0;
+
+    img {
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+.Figure {
+    margin: $space 0 0;
 }
