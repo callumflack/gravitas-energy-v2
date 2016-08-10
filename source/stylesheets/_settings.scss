@@ -144,9 +144,11 @@ $font-weights: (
 /// @prop {String} key - breakpoint name
 /// @prop {String} value - breakpoint mapped to the key
 $breakpoints: (
+    'xs-max' : ( max-width:  599px ),
     'xs'     : ( min-width:  600px ),
-    'sm'     : ( min-width:  767px ),
-    'sm-max' : ( max-width:  768px ),
+    'sm-max' : ( max-width:  767px ),
+    'sm'     : ( min-width:  768px ),
+    'md-max' : ( max-width:  991px ),
     'md'     : ( min-width:  992px ),
     'lg'     : ( min-width: 1200px ),
     'xl'     : ( min-width: 1700px )

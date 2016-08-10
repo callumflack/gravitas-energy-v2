@@ -73,13 +73,11 @@
     }
 }
 
-//.Header h1 {
-//    display: inline-block;
-//
-//    @include when-inside(".home") {
-//        display: block;
-//    }
-//}
+.Header h1 {
+    @include respond-to(md) {
+        @include when-inside(".what-we-do") { width: 80%; }
+    }
+}
 
 
 
@@ -125,6 +123,7 @@ h1            { @include Display(); }
 h2            { @include HeadlineMd(); }
 h3            { @include HeadlineSm(); }
 
+.u-textXs     { @include remFallback($sizeCaption); }
 .u-textSm     { @include remFallback($sizeQuote); }
 .u-textSmEmB  { @include remFallback($sizeQuote); font-family: $font-text-med-i; }
 .u-textRg     { @include remFallback($sizeText); }

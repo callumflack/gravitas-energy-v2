@@ -1,7 +1,7 @@
 ---
 layout: default
 title: about
-navigation_order: 3
+navigation_order: 1
 headline: live better with fewer resources
 introducing-headline: Introducing Gravitas Energy
 introducing-quote: |
@@ -28,15 +28,15 @@ quantum-text: |
 <div class="Container">
 <section class="Section" id="what">
 
-        <div class="Section-item u-xs-before1of12 u-xs-size7of12">
+        <div class="Section-item u-xs-before1of12 u-xs-size8of12">
             <h2 class=""><span>{{ page.introducing-headline }}</span></h2>
-            <p class="Section-intro"><span>{{ page.introducing-quote }}</span> {{ page.introducing-quote-author }}</p>
+            <p class="Section-intro"><span>{{ page.introducing-quote }}</span> <em class="Author">{{ page.introducing-quote-author }}</em></p>
             {{ page.introducing-text | markdownify }}
         </div>
         <div class="Section-item u-xs-before3of12 u-xs-size7of12">
             <h3 class="">{{ page.quantum-headline }}</h3>
             {{ page.quantum-text | markdownify }}
-            <p class="u-textSm"><em>We're accredited with these organisations:</em></p>
+            <p class="Section-signoff"><em>We're accredited with these organisations:</em></p>
             <img class="" style="@media(min-width:767px){height:88px}" src="/build/images/accreditation-logos.jpg" alt="Gravitas Energy accreditations">
         </div>
 

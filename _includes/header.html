@@ -11,29 +11,17 @@
 				<a href="/"><img src="/build/images/gravitas-logo.svg" alt="{{ site.title }}"></a>
 			</div>
 			<ul class="Header-menu u-hideMobile">
-
-                {% assign navigation_pages = site.html_pages | sort: 'navigation_order' %}
-                {% for p in navigation_pages %}
-                    {% if p.navigation_order %}
-                        <li>
-                            <a href="{{ p.url }}" {% if p.url == page.url %}class="is-active"{% endif %}>
-                                {{ p.title | capitalize | replace: '-', ' ' }}
-                            </a>
-                        </li>
-                    {% endif %}
-                {% endfor %}
-
+                {% include nav.html %}
 				<!-- <li><a class="u-linkInvisible" href="tel:+610-402-318-973">Call 0402 318 973</a></li> -->
-
 			</ul>
 		</nav>
 		<div class="ghost">
-			<div class="Header-directive ghost__child u-sm-before1of12 u-sm-size7of12 u-size9of12">
+			<div class="Header-directive ghost__child u-sm-before1of12 u-sm-size7of12 u-size10of12">
 
 				{% if page.title == "home" %}
 					<h1 class="">your sustainable energy partner</h1>
 					<p><span>Switch to sustainable energy, with no upfront costs.</span> Our experts navigate the market and crunch the numbers, so you come out on top.</p>
-					<p class="u-marginT">
+					<p class="u-marginT u-marginB0">
 						<a class="Button Button--rev" href="#contact">Get Started<i class="Arrow-right"></i></a>
 					</p>
 				{% endif %}
@@ -41,10 +29,11 @@
                 {% assign navigation_pages = site.html_pages | sort: 'navigation_order' %}
                 {% for p in navigation_pages %}
                     {% if p.url == page.url %}
-                        <h1>{{ p.headline }}</h1>
+                        {% if p.navigation_order %}
+                            <h1>{{ p.headline }}</h1>
+                        {% endif %}
                     {% endif %}
                 {% endfor %}
-
 
 			</div>
 		</div>

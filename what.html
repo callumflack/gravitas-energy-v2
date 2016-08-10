@@ -1,7 +1,7 @@
 ---
 layout: default
 title: what-we-do
-navigation_order: 1
+navigation_order: 2
 headline: solutions that deliver ROI and positive cashflow
 solar-text: |
     Gravitas Energy experts design and supply only High Quality Tier One Solar Modules and Inverters as approved by Bloomberg Rating Agency. We have a variety of options to further improve your benefits from your existing Solar Energy Generation System. Gravitas aims to maximise customer benefit by supplying a variety of solutions that delivers high ROI and positive cash flow affect.
@@ -25,54 +25,118 @@ brokerage-text: |
 	<section class="Section" id="what">
 
 		<div class="Section-item u-xs-before1of12 u-xs-size7of12">
-			<h2 class=""><span>Energy generation options</span></h2>
+			<!-- <h2 class=""><span>Energy generation options</span></h2> -->
+			<h2 class=""><span>Our products and services</span></h2>
 		</div>
 
-		<div class="Grid Grid--withGutter">
-			<div class="Grid-cell u-before1of12 u-xs-size8of12 u-size10of12">
-				<h3 class="">Solar</h3>
-				{{ page.solar-text | markdownify }}
-				<!-- <figure class="Figure">
-					<img class="" src="/build/images/case-manufacturing1.jpg" alt="" />
-				</figure> -->
-			</div>
+        <div class="Grid Grid--withGutter">
 
-			<div class="Grid-cell u-before3of12 u-xs-size8of12 u-size10of12 u-marginTX3">
-				<h3 class="">Co-gen and Tri-gen solutions</h3>
-				{{ page.trigen-text | markdownify }}
-			</div>
 
-			<div class="Grid-cell u-before1of12 u-xs-size8of12 u-size10of12 u-marginTX3">
-				<h3 class="">Solar PV for Irrigators</h3>
-				{{ page.solarpv-text | markdownify }}
-			</div>
+            <div class="Grid-cell Block-icon">
+                <div class="Section-item Section-item--icon">
+                    <img src="/build/images/icon_solar.png" alt="Solar icon" />
+                </div>
+            </div>
+            <div class="Grid-cell Block-text">
+                <div class="Section-item">
+                    <h3 class="">Solar</h3>
+                    {{ page.solar-text | markdownify }}
+                </div>
+            </div>
 
-			<div class="Grid-cell u-before3of12 u-xs-size8of12 u-size10of12 u-marginTX3">
-				<h3 class="">Power Factor Correction (PFC) & Variable Speed Drives (VSD)</h3>
-				{{ page.pfc-text | markdownify }}
-			</div>
 
-			<div class="Grid-cell u-before1of12 u-xs-size8of12 u-size10of12 u-marginTX3">
-				<h3 class="">Energy efficient lighting</h3>
-				{{ page.lighting-text | markdownify }}
-			</div>
+            <div class="Grid-cell Block-icon Block-icon--alt">
+                <div class="Section-item Section-item--icon">
+                    <img src="/build/images/icon_trigen.png" alt="Trigen icon" />
+                </div>
+            </div>
+            <div class="Grid-cell Block-text">
+                <div class="Section-item">
+                    <h3 class="">Co-gen and Tri-gen solutions</h3>
+                    {{ page.trigen-text | markdownify }}
+                </div>
+            </div>
 
-			<div class="Grid-cell u-before3of12 u-xs-size8of12 u-size10of12 u-marginTX3">
-				<h3 class="">System performance monitoring and maintenance</h3>
-				{{ page.performance-text | markdownify }}
-			</div>
 
-			<div class="Grid-cell u-before1of12 u-xs-size8of12 u-size10of12 u-marginTX3">
-				<h3 class="">Energy storage solutions</h3>
-				{{ page.storage-text | markdownify }}
-			</div>
+            <div class="Grid-cell Block-icon">
+                <div class="Section-item Section-item--icon">
+                    <img src="/build/images/icon_solarpv.png" alt="Solar PV for Irrigators icon" />
+                </div>
+            </div>
+            <div class="Grid-cell Block-text">
+                <div class="Section-item">
+                    <h3 class="">Solar PV for Irrigators</h3>
+    				{{ page.solarpv-text | markdownify }}
+                </div>
+            </div>
 
-			<div class="Grid-cell u-before3of12 u-xs-size8of12 u-size10of12 u-marginTX3">
-				<h3 class="">Energy brokerage</h3>
-				{{ page.brokerage-text | markdownify }}
-			</div>
 
-		</div>
+            <div class="Grid-cell Block-icon Block-icon--alt">
+                <div class="Section-item Section-item--icon">
+                    <img src="/build/images/icon_pfc.png" alt="Power Factory Correction icon" />
+                </div>
+            </div>
+            <div class="Grid-cell Block-text">
+                <div class="Section-item">
+                    <h3 class="">Power Factor Correction (PFC)<br>& Variable Speed Drives (VSD)</h3>
+    				{{ page.pfc-text | markdownify }}
+                </div>
+            </div>
 
+
+            <div class="Grid-cell Block-icon">
+                <div class="Section-item Section-item--icon">
+                    <img src="/build/images/icon_lighting.png" alt="Lighting icon" />
+                </div>
+            </div>
+            <div class="Grid-cell Block-text">
+                <div class="Section-item">
+                    <h3 class="">Energy efficient lighting</h3>
+    				{{ page.lighting-text | markdownify }}
+                </div>
+            </div>
+
+
+            <div class="Grid-cell Block-icon Block-icon--alt">
+                <div class="Section-item Section-item--icon">
+                    <img src="/build/images/icon_performance.png" alt="Performance icon" />
+                </div>
+            </div>
+            <div class="Grid-cell Block-text">
+                <div class="Section-item">
+                    <h3 class="">System performance monitoring and maintenance</h3>
+    				{{ page.performance-text | markdownify }}
+                </div>
+            </div>
+
+
+            <div class="Grid-cell Block-icon">
+                <div class="Section-item Section-item--icon">
+                    <img src="/build/images/icon_storage.png" alt="Storage icon" />
+                </div>
+            </div>
+            <div class="Grid-cell Block-text">
+                <div class="Section-item">
+                    <h3 class="">Energy storage solutions</h3>
+    				{{ page.storage-text | markdownify }}
+                </div>
+            </div>
+
+
+            <div class="Grid-cell Block-icon Block-icon--alt">
+                <div class="Section-item Section-item--icon">
+                    <img src="/build/images/icon_brokerage.png" alt="Brokerage icon" />
+                </div>
+            </div>
+            <div class="Grid-cell Block-text">
+                <div class="Section-item">
+                    <h3 class="">Energy brokerage</h3>
+    				{{ page.brokerage-text | markdownify }}
+                </div>
+            </div>
+
+
+
+        </div>
 	</section>
 </div>

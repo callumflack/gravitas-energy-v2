@@ -38,7 +38,11 @@
 
     img {
         height: rem(30);
-        @include respond-to(sm) { height: rem(34); }
+
+        @include respond-to(sm) {
+            height: rem(34);
+            margin-top: -2px;
+        }
     }
 }
 
@@ -64,5 +68,6 @@
 
 .Footer-menu {
     list-style-type: none;
+    margin-left: 0;
     width: auto;
 }

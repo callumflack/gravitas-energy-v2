@@ -11,6 +11,7 @@
  */
 
 @import "suitcss";
+@import "vendor.family";
 
 /**
  * App styles
@@ -25,8 +26,8 @@
 
 @import "type.anchor";
 @import "type.arrows";
-@import "type.mixins";
 @import "type.verticalrhythm";
+@import "type.mixins";
 @import "type.settings";
 @import "type.transitionrule";
 

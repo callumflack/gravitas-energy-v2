@@ -32,41 +32,65 @@
 }
 
 .Section-item {
+    margin-bottom: $space * 2;
     position: relative;
 
-    &:not(:last-child) {
-        margin-bottom: $space * 2;
-        @include respond-to(xs) { margin-bottom: $space * 3; }
+    @include respond-to(xs) {
+        margin-bottom: $space * 3;
     }
 
-    &:before {
-        background-position: 50%;
-        background-repeat: no-repeat;
-        background-size: contain;
-        content: " ";
-        display: block;
-        height: rem(120);
-        left: rem(-160);
-        position: absolute;
-        top: -($space / 3);
-        width: rem(167);
+    //&:not(:last-child) {
+    //    margin-bottom: $space * 2;
+    //    @include respond-to(xs) { margin-bottom: $space * 3; }
+    //}
+
+    &--icon {
+        transform: translateY(-10px);
 
         @include respond-to(xs) {
-            height: rem(173);
-            left: rem(-191);
-            width: rem(167);
+            transform: translateY(-20px);
+        }
+
+        @include respond-to(md) {
+            margin-left: $space * 1.75;
         }
     }
+
+    //&:before {
+    //    background-position: 50%;
+    //    background-repeat: no-repeat;
+    //    background-size: contain;
+    //    content: " ";
+    //    display: block;
+    //    height: rem(120);
+    //    left: rem(-160);
+    //    position: absolute;
+    //    top: -($space / 3);
+    //    width: rem(167);
+    //
+    //    @include respond-to(xs) {
+    //        height: rem(173);
+    //        left: rem(-191);
+    //        width: rem(167);
+    //    }
+    //}
 }
 
-.Section-item--advice:before      { background-image: url(/build/images/icon_advice.png); }
-.Section-item--saving:before      { background-image: url(/build/images/icon_saving.png); }
-.Section-item--sustainable:before { background-image: url(/build/images/icon_sustainable.png); }
+//.Section-item--advice:before      { background-image: url(/build/images/icon_advice.png); }
+//.Section-item--saving:before      { background-image: url(/build/images/icon_saving.png); }
+//.Section-item--sustainable:before { background-image: url(/build/images/icon_sustainable.png); }
 
 
 .Section-intro {
     font-family: $font-text-bold;
+
     span { font-family: $font-text-bold-i; }
+
+    em.Author {
+        @include remFallback($sizeQuote);
+        font-family: $font-text-bold;
+        text-transform: uppercase;
+    }
 }
 
 .Section-directive {
@@ -85,13 +109,21 @@
     }
 
     &.Section-directive--light {
-        margin: $space*2 0 ($space * 1.5);
+        margin: $space*2 0 ($space * 1.5) !important;
 
         &:before {
             height: rem(1);
             top: calc(50% - #{(rem(1) * 0.5)});
         }
     }
+}
+
+.Section-signoff {
+    @include remFallback($sizeQuote);
+    border-top: 1px solid $color-grey-rule;
+    margin-top: $space;
+    margin-bottom: $space * 0.25;
+    padding-top: $space * 0.4;
 }
 
 
@@ -110,4 +142,32 @@
 
 .Figure {
     margin: $space 0 0;
+}
+
+
+
+// Specials for icon/text block rhythm and widths
+// --------------------------------------------------------------------------
+
+.Block-icon {
+    width: 25%; // 3of12
+    @include respond-to(xs) { margin-left: 8.333333333333332%; } // 1of12
+
+    //@include even() {
+    //    margin-left: 0;
+    //    @include respond-to(xs) { margin-left: 8.333333333333332%; } // 1of12
+    //    @include respond-to(md) { margin-left: 0; }
+    //}
+
+    &--alt {
+        margin-left: 0;
+        @include respond-to(xs) { margin-left: 8.333333333333332%; } // 1of12
+        @include respond-to(md) { margin-left: 0; }
+    }
+}
+
+.Block-text {
+    width: 75%; // 9of12
+    @include respond-to(xs) { width: 75%; } // 8of12
+    @include respond-to(xs) { width: 58.333333333333336%; } // 7of12
 }

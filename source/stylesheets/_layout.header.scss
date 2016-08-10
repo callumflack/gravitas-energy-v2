@@ -19,25 +19,30 @@
     }
 }
 
-.Header--half {
-    max-height: rem(290);
-
-    @include respond-to(sm) {
-        height: rem(350);
-    }
-
-    @include respond-to(xl) {
-        background-position-y: 30% !important;
-    }
-}
+//.Header--half {
+//    max-height: rem(290);
+//
+//    @include respond-to(sm) {
+//        height: rem(350);
+//    }
+//
+//    @include respond-to(xl) {
+//        background-position-y: 30% !important;
+//    }
+//}
 
 .Header-nav {
     //margin: $space 0;
     //position: relative;
-    left: 0;
+    left: $space;
     position: absolute;
-    right: 0;
+    right: $space;
     top: $space;
+
+    @include respond-to(md) {
+        left: 0;
+        right: 0;
+    }
 }
 
 .Header-logo {

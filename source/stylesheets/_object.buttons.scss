@@ -51,12 +51,21 @@
     }
 }
 
-.Button--transparent {
+.Button--fake {
     background-color: $color-bg-neutral;
     color: $color-text;
     cursor: default; // CHEATING
 
     @include on-event() {
+        color: $color-text;
+    }
+}
+
+.Button--transparent {
+    background-color: $color-bg;
+    //color: $color-text;
+
+    @include on-event(true) {
         color: $color-text;
     }
 }

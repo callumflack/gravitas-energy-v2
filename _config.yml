@@ -15,13 +15,7 @@ keywords: "solar energy, sustainable power, energy supplier, Melbourne Victoria 
 email: "info@gravitasenergy.com.au"
 
 # Collections
-collections:
-    copy:
-        title: copy
-        output: false
-    uploads:
-        title: Uploads
-        output: true
+# collections:
 
 # Build settings
 markdown: kramdown

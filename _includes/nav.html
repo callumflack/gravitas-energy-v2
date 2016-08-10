@@ -1,0 +1,10 @@
+{% assign navigation_pages = site.html_pages | sort: 'navigation_order' %}
+{% for p in navigation_pages %}
+    {% if p.navigation_order %}
+        <li>
+            <a href="{{ p.url }}" {% if p.url == page.url %}class="is-active"{% endif %}>
+                {{ p.title | capitalize | replace: '-', ' ' }}
+            </a>
+        </li>
+    {% endif %}
+{% endfor %}

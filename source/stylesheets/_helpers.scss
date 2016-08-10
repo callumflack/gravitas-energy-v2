@@ -64,6 +64,14 @@
 
 
 /**
+ * Colors
+ */
+
+.u-colorNeutral { color: $color-bg-neutral !important; }
+.u-colorGrey    { color: $color-grey !important; }
+
+
+/**
  * Background colors
  */
 
@@ -77,3 +85,20 @@
  */
 
 @mixin zIndex($zIndex: $zIndex-1) { z-index: $zIndex; }
+
+
+
+// Responsive Suits
+// --------------------------------------------------------------------------
+
+@include respond-to(xs-max) {
+    .u-mxs-before1of12 {
+        margin-left: 8.333333333333332% !important;
+    }
+}
+
+@include respond-to(md-max) {
+    .u-mmd-before1of12 {
+        margin-left: 8.333333333333332% !important;
+    }
+}
