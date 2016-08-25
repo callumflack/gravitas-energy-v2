@@ -75,7 +75,8 @@
 
 .Header h1 {
     @include respond-to(md) {
-        @include when-inside(".what-we-do") { width: 80%; }
+        @include when-inside(".what-we-do") { width: 73%; }
+        @include when-inside(".case-studies") { width: 71%; }
     }
 }
 
