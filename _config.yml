@@ -32,3 +32,4 @@ exclude:
 - gulp.js
 - gulpfile.js
 - editorconfig
+- source

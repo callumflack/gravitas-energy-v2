@@ -101,15 +101,17 @@ $transitionType     : ease-out;
  * Fonts
  */
 
-@include font-face('LyonText-Regular', '/source/fonts/LyonText-Regular');
-@include font-face('LyonText-RegularItalic', '/source/fonts/LyonText-RegularItalic');
-@include font-face('LyonText-SemiboldItalic', '/source/fonts/LyonText-SemiboldItalic');
-@include font-face('LyonText-Bold', '/source/fonts/LyonText-Bold');
-@include font-face('LyonText-BoldItalic', '/source/fonts/LyonText-BoldItalic');
-@include font-face('FoundersGroteskCond-Lt', '/source/fonts/FoundersGroteskCond-Lt');
-@include font-face('FoundersGroteskCond-Reg', '/source/fonts/FoundersGroteskCond-Reg');
-@include font-face('FoundersGroteskCond-Med', '/source/fonts/FoundersGroteskCond-Med');
-@include font-face('FoundersGroteskCond-Bold', '/source/fonts/FoundersGroteskCond-Bold');
+$fontPath: '/build/fonts/';
+
+@include font-face('LyonText-Regular', '#{$fontPath}LyonText-Regular');
+@include font-face('LyonText-RegularItalic', '#{$fontPath}LyonText-RegularItalic');
+@include font-face('LyonText-SemiboldItalic', '#{$fontPath}LyonText-SemiboldItalic');
+@include font-face('LyonText-Bold', '#{$fontPath}LyonText-Bold');
+@include font-face('LyonText-BoldItalic', '#{$fontPath}LyonText-BoldItalic');
+@include font-face('FoundersGroteskCond-Lt', '#{$fontPath}FoundersGroteskCond-Lt');
+@include font-face('FoundersGroteskCond-Reg', '#{$fontPath}FoundersGroteskCond-Reg');
+@include font-face('FoundersGroteskCond-Med', '#{$fontPath}FoundersGroteskCond-Med');
+@include font-face('FoundersGroteskCond-Bold', '#{$fontPath}FoundersGroteskCond-Bold');
 
 $sans-light  : 'FoundersGroteskCond-Lt';
 $sans-reg    : 'FoundersGroteskCond-Reg';
