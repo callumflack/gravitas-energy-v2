@@ -3,15 +3,17 @@ layout: default
 title: case-studies
 navigation_order: 3
 headline: reducing consumption, increasing savings
-case-one: A Manufacturing Company in Melbourne, late 2015
+case-one: Manufacturing | Melbourne, VIC
 case-one-text: |
-    Gravitas Energy installed a 30kW solar installation at our premises. Being a Contestable Customer we have high network demand charges. Often they are higher than energy charges. By installing a 30kW system, VSDs and changing our lighting to LED we where able to reduce our energy consumption. We installed additional equipment increased our production and still being able to demonstrate reduction in our usage. We are currently investigating opportunities to increase our system by additional 60kW.
+    Gravitas installed a 30kW solar system for a manufacturing company in Melbourne. As a Contestable Customer with high energy consumption, the business was particularly interested in controlling their network demand charges.
+
+    By installing a 30kW solar system, Variable Speed Drivers and LED lighting, the businesses’ energy consumption was dramatically reduced. The business has seen the results on their energy bill in the 6 months since installation and are currently investigating the opportunity to increase their solar system size to 60kW.
 case-two: A Medical Centre in Melbourne, November 2015
 case-two-text: |
-    Gravitas Energy installed a 20kW AC system at our premises. Our Energy consumption has been greatly reduced. Installation team was professional with minimum interruption to our normal operations.
+    Gravitas installed a 20kW AC system for a Medical Centre in Melbourne. Their energy consumption on air conditioning dropped by 75% in the 6 months following installation and the project was completed with minimum interruption to normal operations.
 case-three: A Manufacturing Company in Melbourne, late 2015
 case-three-text: |
-    Gravitas Energy installed a 30kW solar installation at our premises, due to limitations of available power for our needs. We could not take on additional contracts as we reached top limit of available power to our factory. By installing this system we managed to half our energy consumption thus allowing us to grow our business. Our billable consumption dropped from 8,736kWhs last year to 4,329kWhs for same period this year. We could not be happier with the outcomes.
+    Gravitas installed a 30kW solar system for another manufacturing company in Melbourne. The factory had reached the maximum limit of power available and could not take on any additional contracts. The installation of the solar system resulted in the business’ billable consumption dropping from 8,736kWhs to 4,329 kWhs, a 50% reduction. At the same time, the businesses’ energy requirements were met, allowing them to expand and grow.
 ---
 
 {% assign cases = site.pages | where: 'title', 'case-studies' | first  %}
@@ -21,36 +23,81 @@ case-three-text: |
 
 		<div class="Section-item u-xs-before1of12 u-xs-size7of12">
 			<h2 class=""><span>Case studies</span></h2>
-			<!-- <p class="Section-intro">{{ home.what }} <span>How?</span></p> -->
 		</div>
 
 		<div class="Grid Grid--withGutter">
-			<div class="Grid-cell u-xs-before1of12 u-xs-size8of12">
-				<h3 class="">{{ page.case-one }}</h3>
-				{{ page.case-one-text | markdownify }}
-				<figure class="Figure">
-					<img class="" src="/build/images/case-manufacturing1.jpg" alt="" />
-				</figure>
-				<!-- <figure class="ImageDuo">
-					<img src="/build/images/case-manufacturing1.jpg" alt="" />
-					<img src="/build/images/case-manufacturing1-graph.jpg" alt="" />
-				</figure> -->
+			<div class="Grid-cell u-xs-before1of12 u-xs-size10of12">
+				<div class="Case Case--green">
+				    <h3 class="">Manufacturing <span class="divider">|</span> Melbourne, VIC</h3>
+                    <figure class="Figure--case">
+                        <div class="Grid" style="letter-spacing: 0">
+                            <div class="Grid-cell u-md-size1of2">
+                                <div class="Media">
+                                    <div class="Media-figure">30%</div>
+                                    <div class="Media-body">reduction in total energy expenditure</div>
+                                </div>
+                            </div>
+                            <div class="Grid-cell u-md-size1of2 u-marginT u-md-marginT0">
+                                <div class="Media">
+                                    <div class="Media-figure">60%</div>
+                                    <div class="Media-body">reduction in energy expenditure on lighting</div>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+				    {{ page.case-one-text | markdownify }}
+				    <figure class="Figure">
+                        <div class="Grid">
+                            <div class="Grid-cell u-sm-size1of2">
+                                <img class="" src="/build/images/case-manufacturing-1.jpg" alt="" />
+                            </div>
+                            <div class="Grid-cell u-sm-size1of2">
+                                <img class="" src="/build/images/case-manufacturing-1-graph.jpg" alt="" />
+                            </div>
+                        </div>
+				    </figure>
+				</div>
 			</div>
 
-			<div class="Grid-cell u-xs-before3of12 u-xs-size8of12 u-marginTX3">
-				<h3 class="">{{ page.case-two }}</h3>
-				{{ page.case-two-text | markdownify }}
-				<figure class="Figure">
-					<img src="/build/images/case-medical.jpg" alt="" />
-				</figure>
+			<div class="Grid-cell u-xs-before2of12 u-xs-size10of12 u-marginTX3">
+                <div class="Case Case--blue">
+                    <h3 class="">Medical Centre <span class="divider">|</span> Melbourne, VIC</h3>
+                    <figure class="Figure--case Media">
+                        <div class="Media-figure">35%</div>
+                        <div class="Media-body">reduction in total energy expenditure and green house gas emissions</div>
+                    </figure>
+                    {{ page.case-two-text | markdownify }}
+                    <figure class="Figure">
+                        <div class="Grid">
+                            <div class="Grid-cell u-sm-size1of2">
+                                <img class="" src="/build/images/case-medical.jpg" alt="" />
+                            </div>
+                            <div class="Grid-cell u-sm-size1of2">
+                                <img class="" src="/build/images/case-medical-graph.jpg" alt="" />
+                            </div>
+                        </div>                    </figure>
+                </div>
 			</div>
 
-			<div class="Grid-cell u-xs-before1of12 u-xs-size8of12 u-marginTX3">
-				<h3 class="">{{ page.case-three }}</h3>
-				{{ page.case-three-text | markdownify }}
-				<figure class="Figure">
-					<img src="/build/images/case-manufacturing2.jpg" alt="" />
-				</figure>
+			<div class="Grid-cell u-xs-before1of12 u-xs-size10of12 u-marginTX3">
+                <div class="Case Case--purple">
+                    <h3 class="">Manufacturing <span class="divider">|</span> Melbourne, VIC</h3>
+                    <figure class="Figure--case Media">
+                        <div class="Media-figure">60%</div>
+                        <div class="Media-body">reduction in total energy expenditure</div>
+                    </figure>
+                    {{ page.case-three-text | markdownify }}
+                    <figure class="Figure">
+                        <div class="Grid">
+                            <div class="Grid-cell u-sm-size1of2">
+                                <img class="" src="/build/images/case-manufacturing-2.jpg" alt="" />
+                            </div>
+                            <div class="Grid-cell u-sm-size1of2">
+                                <img class="" src="/build/images/case-manufacturing-2-graph.jpg" alt="" />
+                            </div>
+                        </div>
+                    </figure>
+                </div>
 			</div>
 		</div>
 

@@ -60,10 +60,15 @@
 
 .Header-menu {
     margin: 0;
-    position: absolute;
-    top: rem(13);
+    position: relative;
+    top: $space;
     right: 0;
     width: auto;
+
+    @include respond-to(xs) {
+        position: absolute;
+        top: rem(13);
+    }
 
     li {
         @include TextSm();

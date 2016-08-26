@@ -46,6 +46,7 @@
 
     &--icon {
         transform: translateY(-10px);
+        margin: 0;
 
         @include respond-to(xs) {
             transform: translateY(-20px);
@@ -127,31 +128,25 @@
 }
 
 
-// New shit for case studies
-// --------------------------------------------------------------------------
-
-.ImageDuo {
-    font-size: 0;
-    margin: $space 0;
-
-    img {
-        display: inline-block;
-        width: 50%;
-    }
-}
-
-.Figure {
-    margin: $space 0 0;
-}
-
-
 
 // Specials for icon/text block rhythm and widths
 // --------------------------------------------------------------------------
 
 .Block-icon {
-    width: 25%; // 3of12
-    @include respond-to(xs) { margin-left: 8.333333333333332%; } // 1of12
+    img {
+        height: 130px;
+        margin: 0 auto;
+    }
+
+    @include respond-to(xs) {
+        margin-left: 8.333333333333332%; // 1of12
+        width: 25%; // 3of12
+
+        img {
+            height: auto;
+            margin: 0;
+        }
+    }
 
     //@include even() {
     //    margin-left: 0;
@@ -167,7 +162,82 @@
 }
 
 .Block-text {
-    width: 75%; // 9of12
-    @include respond-to(xs) { width: 75%; } // 8of12
+    //width: 75%; // 9of12
+    @include respond-to(xs) { width: 75%; } // 9of12
     @include respond-to(xs) { width: 58.333333333333336%; } // 7of12
+}
+
+
+
+
+// Case study media objects
+// --------------------------------------------------------------------------
+
+//.ImageDuo {
+//    font-size: 0;
+//    margin: $space 0;
+//
+//    img {
+//        display: inline-block;
+//        width: 50%;
+//    }
+//}
+
+.Case {
+    border-radius: 6px;
+    padding: $space * 0.9 $space $space;
+
+    &--green { background-color: rgba($color-green, 0.4); }
+    &--blue { background-color: rgba($color-blue, 0.4); }
+    &--purple { background-color: rgba($color-purple, 0.4); }
+}
+
+.Case h3 {
+    margin-bottom: $space * 0.35;
+}
+
+.Case--blue .Media-body {
+    @include respond-to(md) { flex: 0.5; }
+}
+
+.Figure {
+    margin: $space 0 0;
+}
+
+.Figure--case {
+    @include TextSm();
+    border-top: 1px solid rgba($color-text, 0.5);
+    border-bottom: 1px solid rgba($color-text, 0.5);
+    line-height: 1.25;
+    margin: 0 0 $space * 0.75 0;
+    padding: $space * 1.5 $space $space 0;
+
+    @include respond-to(sm) {
+        padding: $space * 1.5 $space $space;
+    }
+}
+
+.Figure--case .Media-figure {
+    @include remFallback($base-font-size-unit * 3);
+    color: $color-text;
+    font-family: $sans-light;
+    letter-spacing: 0.05em;
+    line-height: 0.5;
+    margin: 15px 9px 0 0;
+
+    @include respond-to(xs) { @include remFallback($base-font-size-unit * 4); }
+    @include respond-to(sm) { margin-top: 11px; }
+}
+
+// When a .Grid gets inbetween
+.Figure--case .Grid {
+    .Media { margin-bottom: 0; }
+    .Media-body { @include TextSm(); margin-bottom: 0; }
+}
+
+
+span.u-sm-lineBreak {
+    display: table;
+    margin: auto;
+    @include respond-to(sm) { display: inline; }
 }

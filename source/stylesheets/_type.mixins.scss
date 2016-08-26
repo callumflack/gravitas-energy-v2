@@ -124,6 +124,9 @@ h1            { @include Display(); }
 h2            { @include HeadlineMd(); }
 h3            { @include HeadlineSm(); }
 
+h3 span       { margin: 0 5px 0 6px; }
+span.divider  { font-family: $sans-light; }
+
 .u-textXs     { @include remFallback($sizeCaption); }
 .u-textSm     { @include remFallback($sizeQuote); }
 .u-textSmEmB  { @include remFallback($sizeQuote); font-family: $font-text-med-i; }

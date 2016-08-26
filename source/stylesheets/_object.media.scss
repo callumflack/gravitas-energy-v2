@@ -1,58 +1,50 @@
-/* ==========================================================================
 
-    MEDIA OBJECT
-    https://github.com/csswizardry/inuit.css/blob/c737cf1694e9db4d597f8d081091b8529614e370/objects/_media.scss
 
-   ========================================================================== */
+// --------------------------------------------------------------------------------------------------
+// FLEXMEDIA!
+// @url: https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/media.css
+// --------------------------------------------------------------------------------------------------
 
-/**
- * Place any image- and text-like content side-by-side, as per:
- * stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
- * E.g.:
- *
-   <div class=media>
-       <img src=http://placekitten.com/200/300 alt="" class=media__img>
-       <p class=media__body>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-   </div>
- *
- * Demo: jsfiddle.net/inuitcss/cf4Qs
- *
- */
 
 .Media {
-    display: block;
-    @include clearfix();
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 1em;
 }
 
-    .Media-img {
-        float: left;
-        margin-right: $space--D3;
-    }
+.Media-figure {
+	margin-right: 1em;
+}
 
-    // Reversed image location (right instead of left).
-    .Media-img--rev {
-        float: right;
-        margin-left: $space--D3;
-    }
-        .Media-img img,
-        .Media-img--rev img {
-            display: block;
-        }
+.Media-body {
+	flex: 1;
+}
+.Media-body,
+.Media-body :last-child {
+	margin-bottom: 0;
+}
 
-    .Media-body {
-        overflow: hidden;
-    }
-        .Media-body,
-        .Media-body > :last-child {
-            margin-bottom: 0;
-        }
+.Media-title {
+	margin: 0 0 .5em;
+}
+
+.Media--center {
+	align-items: center;
+}
+
+.Media--reverse > .Media-figure {
+	order: 1;
+	margin: 0 0 0 1em;
+}
 
 
-    //`.img`s in `.islet`s need an appropriately sized margin.
-    .islet .Media-img {
-        margin-right: $space--D3;
-    }
-    .islet .Media-img--rev {
-        margin-left: $space--D3;
-    }
+// theme
+.Media-figure {
+	margin-left: 0;
+	margin-right: 8px;
+
+	//@include respond-to(xs) {
+	//	margin-left: 0;
+	//	margin-right: 1em;
+	//}
+}
