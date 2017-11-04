@@ -139,6 +139,7 @@
     }
 
     @include respond-to(xs) {
+        flex-basis: auto;
         margin-left: 8.333333333333332%; // 1of12
         width: 25%; // 3of12
 
@@ -163,8 +164,8 @@
 
 .Block-text {
     //width: 75%; // 9of12
-    @include respond-to(xs) { width: 75%; } // 9of12
-    @include respond-to(xs) { width: 58.333333333333336%; } // 7of12
+    @include respond-to(xs) { flex-basis: auto; width: 75%; } // 9of12
+    @include respond-to(xs) { flex-basis: auto; width: 58.333333333333336%; } // 7of12
 }
 
 
